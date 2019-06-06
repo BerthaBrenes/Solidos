@@ -1,0 +1,139 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="esfuerzos"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Teoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true" class="has-header">
+  <h2 id="teorA2-heading22" style="color:#000000;">Esfuerzos en vigas</h2>
+  <h3 id="teorA2-heading25" style="color:#000000;">Esfuerzo de flexión</h3>
+  <div id="teorA2-markdown30" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;font-size:14px;">Es el esfuerzo sobre una estructura debido al momento flector sobre esta. Depende de la distancia desde el centroide de la sección transversal hasta el punto donde se está calculando el esfuerzo de flexión. Mientras más se aleje del centro, mayor
+      es el esfuerzo.</p>
+
+    <p style="color:#000000;font-size:14px;">Si la distancia es cero (0), es decir, en el centro de la sección transversal, el esfuerzo de flexión es igual a cero, a ese eje se le llama eje neutro.</p>
+
+    <p style="color:#000000;font-size:14px;">El esfuerzo de flexión varía linealmente a lo largo de la sección transversal.</p>
+  </div>
+  <div>
+    <img src="assets/p3huiSCPRQ2GnMIuEoys_Slido1.png" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h3 id="teorA2-heading26" style="color:#000000;">Esfuerzo cortante</h3>
+  <div id="teorA2-markdown32" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Es el esfuerzo debido a la fuerza cortante sobre una viga. Depende del ancho de la sección transversal y del primer momento de área de la sección que genera el cortante.</p>
+
+    <p style="color:#000000;">El esfuerzo cortante, a diferencia del esfuerzo de flexión, no varía linealmente a lo largo de la sección transversal.</p>
+  </div>
+  <div>
+    <img src="assets/xPCFihfESnyEGXfu1VQv_Slido2.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h2 id="teorA2-heading24" style="color:#000000;">Deformación en vigas</h2>
+  <div id="teorA2-markdown34" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Cuando una viga se deflecta el eje se desvía de su posición inicial bajo la acción de las fuerzas aplicadas. Comúnmente debe ser delimitada, con el objetivo de proveer integridad y estabilidad al elemento y prevenir agrietamientos.</p>
+
+    <p style="color:#000000;">La deformación del elemento causada por el momento flector M, se mide por la curvatura de la superficie neutra.</p>
+
+    <p style="color:#000000;">En el caso de la curva elástica de una viga, donde las deformaciones permisibles son pequeñas, implica que los valores de la derivada de "y" son pequeños y por lo tanto, su cuadrado es despreciable comparado con la unidad.</p>
+  </div>
+  <div>
+    <img src="assets/4pSxkP15RveN31FQ4Wea_Slido3.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h3 id="teorA2-heading27" style="color:#000000;">Método de integración</h3>
+  <div id="teorA2-markdown35" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">El método de integración para el cálculo de deflexiones en vigas consiste en integrar dos veces la siguiente ecuación (la cual es demostrada en la sección de Fórmulas) con el fin de obtener la función que define el comportamiento de la deflexión:</p>
+  </div>
+  <div>
+    <img src="assets/tytlYV4BRpqYSmPVtGxA_Slido4.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 16px;"></div>
+  <div id="teorA2-markdown36" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Para este método se tienen que tener algunos conceptos claros sobre cálculo diferencial:</p>
+
+    <ol>
+      <li>
+        <p style="color:#000000;">La primera derivada de una función evaluada en un punto es la pendiente de la recta tangente a la curva de esa función en ese punto evaluado.</p>
+      </li>
+      <li>
+        <p style="color:#000000;">Si el punto donde se evalúa la primera derivada es un máximo o un mínimo, entonces el valor de la primera derivada es cero, y por lo tanto, la pendiente de la recta tangente también es cero.</p>
+      </li>
+    </ol>
+  </div>
+  <div class="spacer" style="width: 300px; height: 18px;"></div>
+  <div>
+    <img src="assets/dTFApk8lRBSGUzaDcTd2_Slido5.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h4 id="teorA2-heading28" style="color:#000000;">Condiciones de frontera</h4>
+  <div id="teorA2-markdown37" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">En el método de integración se tienen que tener claras algunas condiciones de frontera que son de mucha ayuda para evaluar en la primer derivada o en el propio criterio de la función "y" que define la deflexión de la viga. Además, algunas condiciones
+      de frontera dan a saber cuándo el esfuerzo de flexión o el de cortante toman valores de cero.</p>
+
+    <p style="color:#000000;">Las condiciones de frontera más comunes son:</p>
+  </div>
+  <div>
+    <img src="assets/S03eV1IxSC6Ccg9gmf71_Slido6.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 15px;"></div>
+  <div>
+    <img src="assets/4HV4UDOIQyGvcAtOHLPi_Slido7.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 19px;"></div>
+  <div>
+    <img src="assets/eWQve23EQMOY9hTjbgjb_Slido8.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 21px;"></div>
+  <div>
+    <img src="assets/HQtS8c0CRBOCR2C1hB0m_Slido9.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h3 id="teorA2-heading29" style="color:#000000;">Método de área momento</h3>
+  <h4 id="teorA2-heading31" style="color:#000000;">Teoremas de área momento</h4>
+  <div id="teorA2-markdown38" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Son una alternativa simplificada de los métodos de integración. Sin embargo, es importante tener especial cuidado al utilizarlo, debido a que debe conocerse cualitativamente la curva elástica del elemento ante las cargas aplicadas. Además, este
+      método funciona de una mejor manera ante situaciones en las que la rigidez de la viga es variable. </p>
+
+    <p style="color:#000000;">Es importante, antes de aplicar estos métodos, realizar el diagrama de momentos con los valores del momento dividos entre EI, pues los dos teoremas de área momento utilizan ese diagrama.</p>
+  </div>
+  <div>
+    <img src="assets/SshJxKsyRSOwsdgehh49_Slido11.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 16px;"></div>
+  <h4 id="teorA2-heading30" style="color:#000000;">Primer teorema de área momento</h4>
+  <div id="teorA2-markdown39" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Establece que el ángulo entre las tangentes del punto A y del punto B es igual al área bajo la curva del diagrama de momentos dividido entre EI, desde el punto A hasta el punto B.</p>
+
+    <p style="color:#000000;">Las áreas que correponden a momentos flexionantes positivos se toman positivas y aquellas correspondientes a los momentos negativos se toman negativas. </p>
+
+    <p style="color:#000000;">Si la suma de las áreas entre dos puntos cualesquiera es positiva, la tangente a la derecha gira en sentido antihorario; y si es negativa, la tangente de la derecha gira en sentido horario.</p>
+  </div>
+  <div>
+    <img src="assets/jh3H8HRCQXuFFc5kTX3t_Slido10.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 27px;"></div>
+  <div>
+    <img src="assets/9WIi68GQXCXnp2HYFpZ3_Slido12.gif" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h4 id="teorA2-heading32" style="color:#000000;">Segundo teorema de área momento</h4>
+  <div id="teorA2-markdown40" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Establece que la desviación tangencial de un punto A, sobre la curva elástica, desde una tangente por otro punto B (también sobre la curva elástica) es igual al momento estático de la sección delimitada desde A hasta B, en el diagrama de M/EI, respecto
+      a una línea vertical que pasa por A.</p>
+  </div>
+  <div>
+    <img src="assets/yVRfyHooQFCNPWReK8ZN_Slido13.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 18px;"></div>
+  <div id="teorA2-markdown41" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">De manera análoga, si se desea obtener la desviación tangencial del punto B desde una tangente que pasa por A sobre la curva elástica, se utiliza la misma área de la sección delimitada entre dichos puntos, pero esta vez se multiplica por la distancia
+      del centroide del área a una línea vertical que pasa por B.</p>
+
+    <p style="color:#000000;">La siguiente imagen ilustra de una buena manera el segundo teorema de área momento:</p>
+  </div>
+  <div>
+    <img src="assets/Czcsh667SvmPfd8nai4Z_Slido14.png" style="display: block; width: 90%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="spacer" style="width: 300px; height: 38px;"></div>
+  <div id="teorA2-markdown42" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#AC6161;">Las ecuaciones que utilizan ambos métodos se pueden encontrar en la sección de Fórmulas.</p>
+  </div>
+</ion-content>

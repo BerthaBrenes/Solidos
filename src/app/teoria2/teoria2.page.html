@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="conceptos"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Teoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true" class="has-header">
+  <h3 id="teorA3-heading23" style="color:#000000;">Fuerza Cortante y Momento Flector en vigas</h3>
+  <h3 id="teorA3-heading33" style="color:#000000;">Fuerza Cortante (V)</h3>
+  <div id="teorA3-markdown28" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Se genera cuando dos fuerzas externas actúan sobre un cuerpo en direcciones opuestas, pero en diferentes líneas de acción.</p>
+
+    <p style="color:#000000;">V es paralela a la sección transversal, una capa intenta deslizarse con respecto a la otra.</p>
+  </div>
+  <h3 id="teorA3-heading34" style="color:#000000;">Momento Flector (M)</h3>
+  <div id="teorA3-markdown52" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Se manifiesta cuando el cuerpo se flexiona, lo que implica que este se ve sometido a fuerzas de tensión y compresión simultáneamente.</p>
+  </div>
+  <h3 id="teorA3-heading35" style="color:#000000;">¿Cómo se manifiestan?</h3>
+  <div>
+    <img src="assets/rIB2jxBSoez7A9mtnliM_P1.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h4 id="teorA3-heading38" style="color:#000000;">Caso 1: Corte en el centro de la viga</h4>
+  <div>
+    <img src="assets/szHp5LPqS4WdMDn9yG5Y_caso1.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div id="teorA3-markdown57" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">∑Fy = 0</p>
+
+    <p style="color:#000000;">V + 1500kgf - 500kgf/m x 3m = 0</p>
+
+    <p style="color:#000000;">V = 0Kgf</p>
+
+    <p style="color:#000000;">∑M en el centro = 0</p>
+
+    <p style="color:#000000;">M + 500kgf/m x 3m x 1,5m - 1500kgf x 3m = 0</p>
+
+    <p style="color:#000000;">M = 2250kgf*m</p>
+  </div>
+  <h4 id="teorA3-heading39" style="color:#000000;">Caso 2: Corte a un metro desde la izquierda</h4>
+  <div>
+    <img src="assets/l7LgYleARpmNVbN6uagn_caso2.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div id="teorA3-markdown58" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">∑Fy = 0</p>
+
+    <p style="color:#000000;">-V + 1500kgf - 500kgf/m x 1m=0</p>
+
+    <p style="color:#000000;">V = 1000Kgf</p>
+
+    <p style="color:#000000;">∑M en el centro = 0</p>
+
+    <p style="color:#000000;">M+500kgf/m x 1m x 0,5m - 1500kgf x 1m = 0</p>
+
+    <p style="color:#000000;">M = 1250kgf.m </p>
+  </div>
+  <h4 id="teorA3-heading40" style="color:#000000;">Por integración </h4>
+  <div id="teorA3-markdown54" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">ω=-500kgf/m</p>
+
+    <pre>
+      <code>V = -∫ωdx V = -∫-500dx V = 500x + CV V = 500x - 1500 NOTA: CV es igual a la reacción.</code>
+    </pre>
+
+    <p style="color:#000000;">Caso 1: V(3) = 500(3) – 1500 = 0kgf
+      <br>Caso 2: V(1) = 500(1) - 1500 = -1000kgf</p>
+
+    <pre>
+      <code>M = -∫Vdx M = -∫500x-1500 dx M = -250x^2+1500x+CM M = -250x^2+1500x NOTA: CM = 0 porque estos apoyos no restringen momento (Solo el empotramiento lo hace).</code>
+    </pre>
+
+    <p style="color:#000000;">Caso 1: M(3) = -250(3)² +1500(3) = 2250 kgf
+      <em>m Caso 2: M(1) = -250(1)² +1500(1) = 1250 kgf</em>m</p>
+  </div>
+  <h3 id="teorA3-heading43" style="color:#000000;">Diagramas de Fuerza Cortante (V) y Momento Flector (M)</h3>
+  <div>
+    <img src="assets/snRc4pmXTXakuNEOO2Ir_P6.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h4 id="teorA3-heading44" style="color:#000000;">Pasos para hacer un DV</h4>
+  <div id="teorA3-markdown55" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">
+      <strong>NOTA:</strong> El DV se basa en el Diagrama de Cuerpo Libre (DCL).</p>
+
+    <p style="color:#000000;">¿Hacia dónde se avanza?</p>
+
+    <p style="color:#000000;">Las fuerzas que van en Y+ en el DCL, van en dirección negativa en el DV. Las fuerzas que van en Y- en el DCL, van en dirección positiva en el DV.</p>
+
+    <p style="color:#000000;">¿Cuánto se avanza?</p>
+
+    <p style="color:#000000;">En cargas puntuales es la magnitud de esta. En cargas distribuidas se calcula el área que forma la ω y la distancia de esta.</p>
+  </div>
+  <div>
+    <img src="assets/AGSeUXqASPiHJyz0KgVd_S6.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <h4 id="teorA3-heading45" style="color:#000000;">Pasos para hacer un DM</h4>
+  <div id="teorA3-markdown56" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">¿Hacia dónde se avanza?</p>
+
+    <p style="color:#000000;">Si el DV está en la parte positiva, se avanza hacia arriba. Si el DV está en la parte negativa, se avanza hacia abajo.</p>
+
+    <p style="color:#000000;">¿Cuánto se avanza?</p>
+
+    <p style="color:#000000;">Se calcula el área bajo la curva del DV.</p>
+
+    <p style="color:#000000;">¿Concavidad de la curva?</p>
+
+    <p style="color:#000000;">Si el DV empieza con una magnitud grande de V y termina con una magnitud menor, entonces la curva DM empieza una pendiente alta y termina con una pendiente baja. (Y viceversa).</p>
+  </div>
+  <div>
+    <img src="assets/rDY7rARRxGTqQYJpjAuv_S7.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+  <div>
+    <img src="assets/Q437m7LQNZ5Zc9hFV5gA_DM1.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </div>
+</ion-content>
